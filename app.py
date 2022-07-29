@@ -36,8 +36,22 @@ unused = integrity_check(emissions)
 app = Dash(__name__, external_stylesheets=[dbc.themes.VAPOR])
 server = app.server
 
-app.layout = html.Div([
-    html.H4('United States CO2 Emissions by Energy Sector'),
+app.layout = html.Div([html.H4('United States CO2 Emissions by Energy Sector'),
+
+    html.P('''This dashboard displays a SARIMA (Seasonal Autoregressive Integrated Moving Average) Time Series Model
+    of yearly total United States Greenhouse Gas Emissions in CO2e, or Carbon Dioxide Equivalent Value. Carbon dioxide equivalent 
+    or CO2e means the number of metric tons of CO2 emissions with the same global warming potential as one metric ton of another greenhouse gas.
+    
+    In future updates, this dashboard will include a heatmap of the United States showing where most of these emissions come from, as well as
+    a table of model statistics, graphical summary of model evaluation and error analysis, and a list of sources.
+    '''),
+    html.P('Author: Marcelino Velasquez'),
+    html.P([html.A('Data Source - EPA Envirofacts API', href='https://www.epa.gov/enviro/envirofacts-data-service-api')]),
+    html.P([html.A('LinkedIn', href='https://www.linkedin.com/in/marcelino-velasquez-739b4013b/')]),
+    html.P([html.A('GitHub', href='https://github.com/MarcelinoV')]),
+#]), 
+
+html.Div([
     dcc.Graph(id='time_series_chart'),
     html.P('Select Sector'),
     dcc.Dropdown(
@@ -47,7 +61,7 @@ app.layout = html.Div([
             clearable=False,
     ),
 
-])
+])])
 
 @app.callback(
     Output('time_series_chart', 'figure'),
