@@ -44,9 +44,11 @@ When first conducting this project, I wanted to try out using SQL to make the pr
 
 After connecting to the data in a Google Colab Notebook instance, I investigated some basic questions using SQL, which were the following: 
 
-*1. How do states compare when it comes to CO2 emissions?
-2. How have CO2 emissions increased or decreased throughout the years in the US?
-3. What is the most common Gas type?*
+*1. How do states compare when it comes to CO2 emissions?*
+
+*2. How have CO2 emissions increased or decreased throughout the years in the US?*
+
+*3. What is the most common Gas type?*
 
 To summarize, I found that Texas, Louisiana, California, Illinois, and Indiana had the highest amount of GHG emissions, while DC, Vermont, New Hampshire, South Dakota, & Rhode Island had the least. I also found that the year 2017 had the most amount of emissions, 2012 had the least, and the most commmon emission in the US is CO2 gas, or carbon dioxide.
 
