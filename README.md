@@ -54,6 +54,18 @@ To summarize, I found that Texas, Louisiana, California, Illinois, and Indiana h
 
 ## EDA
 
+![alt text](https://github.com/MarcelinoV/US_CO2_Emissions/blob/main/imgs/GHG_emissions_distribution.jpg "Histogram of GHG Emissions 2010-2020")
+
+I began the Exploratory Data Analysis by getting summary measures to familiarize myself more with the data, such as null analysis, distribution, and descriptive statistics. GHG Emissions between 2010 and 2020 have a right skewed distribution, and this holds true even after controlling for year. This means that the mean and median of the emissions are far apart, which could mean the data has high variance. 
+
+![alt text](https://github.com/MarcelinoV/US_CO2_Emissions/blob/main/imgs/gas_code_distribution.jpg "Disitribution of GHG Emissions by Gas Code")
+
+GHG emissions are also 95% made up of three types of gas, CO2, CH4, and N2O, despite there being eight other types of gas in the data. The most interesting insight to me from this phase is which energy sectors emit the most GHG emissions. According to the following visual, the majority of greenhouse gas emissions is sourced from three sectors: Petroleum Product Suppliers, Power Plants, and Natural Gas and Natural Gas Liquids Suppliers. 
+
+![alt text](https://github.com/MarcelinoV/US_CO2_Emissions/blob/main/imgs/energy_sector_emission_distribution.jpg "Distribution of GHG Emissions by Energy Sector")
+
+Similar to the gas code distribution, this finding is a scenario where the Pareto Principle applies. These three sectors only make up 23% of the dataset in terms of records, yet make up 84% of GHG emissions in the dataset. This means that a majority GHG emissions produced in the United States in this timeframe boil down to only three sectors when there are 15 total. This insight would help guide my analysis going forward.
+
 ## Data Preparation for Time Series
 
 ## Model Building
